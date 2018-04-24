@@ -6,9 +6,9 @@ pipeline {
         echo 'My First Pipeline'
       }
     }
-    stage('Status') {
+    stage('CheckHostDetails') {
       steps {
-        sh 'uname -a'
+        sh 'uname -a;id;'
       }
     }
   }
