@@ -8,7 +8,7 @@ pipeline {
     }
     stage('CheckHostDetails') {
       steps {
-        sh 'uname -a;id; sudo docker info'
+        sh 'uname -a;id; docker info'
       }
     }
   }
