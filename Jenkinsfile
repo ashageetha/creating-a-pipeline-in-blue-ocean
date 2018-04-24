@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Status') {
       steps {
-        sh 'docker info; uname -a'
+        sh 'uname -a'
       }
     }
   }
